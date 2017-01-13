@@ -1,0 +1,32 @@
+
+
+<div class="mui-container-fluid">
+  <div class="mui-row">
+    <div class="mui-col-md-4"></div>
+    <div class="mui-col-md-4">
+      <%= form_for(@article, remote: true) do |f| %>
+        <% if @article.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+            <ul>
+            <% @article.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="mui-textfield mui-textfield--float-label">
+          <%= f.text_field :title %>
+          <label>Title: </label>
+        </div>
+        <div class="mui-textfield mui-textfield--float-label">
+          <%= f.text_area :body %>
+          <label>Body: </label>
+        </div>
+        <%= button_to "Create", { action: "create" } %>
+      <% end %>
+      </div>
+      <div class="mui-col-md-4"></div>
+<br />

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plato</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.7/css/mui.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.7/js/mui.min.js"></script>
+  </head>
+
+  <body>
+    <%=render 'layouts/nav' %>
+    <%= yield %>
+    <%=render 'layouts/footer' %>
+  </body>
+</html>

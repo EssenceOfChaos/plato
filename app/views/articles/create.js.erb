@@ -1,0 +1,4 @@
+$('#new_article').remove();
+$('.mui-btn.mui-btn--raised').show();
+$('#title').append('<%= j @article.title %>');
+$('#body').append('<%= j @article.body %>');
