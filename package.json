@@ -1,0 +1,27 @@
+{
+  "name": "plato",
+  "version": "1.0.0",
+  "dependencies": {
+    "bower": "~1.2"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EssenceOfChaos/plato.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EssenceOfChaos/plato/issues"
+  },
+  "homepage": "https://github.com/EssenceOfChaos/plato#readme",
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

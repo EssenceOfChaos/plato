@@ -2,9 +2,6 @@
 <div id="content-wrapper" class="mui--text-center">
   <div class="mui--appbar-height"></div>
 <br>
-
-<p id="notice"><%= notice %></p>
-
 <br>
 <div class="mui--text-display3">Plato</div>
 <br>
@@ -46,9 +43,14 @@
 
 <%= link_to 'New Article', new_article_path, remote: true, class: 'mui-btn mui-btn--raised' %>
 
-
-
 </div>
 
+<div class="ui segment" id="pageinate">
+<% if @articles.count <= 10 %>
+<p><strong>Page 1 of 1</p></strong>
+<%else%>
+<%= will_paginate @articles, renderer: WillPaginateSemanticUi::ActionView::Renderer %>
+<% end %>
+</div>
 
 

@@ -1,0 +1,10 @@
+{
+  "name": "plato",
+  "dependencies": {
+    "mui": "~> 0.9.8",
+    "jquery.lazyload": "~> 1.9.7"
+  },
+  "devDependencies": {
+    "livereload-js": "^2.2.1"
+  }
+}

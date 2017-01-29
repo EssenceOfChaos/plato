@@ -2,12 +2,12 @@
   <div class="mui-container">
     <table width="100%">
       <tr class="mui--appbar-height">
-        <td class="mui--text-title">Brand.io</td>
+        <td class="mui--text-title"> <%=link_to 'Plato', root_path %></td>
         <td align="right">
           <ul class="mui-list--inline mui--text-body2">
             <li><%=link_to 'Post', new_article_path %></li>
             <li><%=link_to 'View', articles_path %></li>
-            <li><%=link_to 'Post', new_article_path %></li>
+            <li><%=link_to 'Profile', user_path(@user) %></li>
           </ul>
         </td>
       </tr>
