@@ -2,7 +2,7 @@
   "name": "plato",
   "version": "1.0.0",
   "dependencies": {
-    "bower": "~1.2"
+    "bower": "~1.8"
   },
   "main": "index.js",
   "directories": {
